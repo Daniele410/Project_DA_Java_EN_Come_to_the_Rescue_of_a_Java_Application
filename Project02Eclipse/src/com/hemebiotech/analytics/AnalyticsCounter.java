@@ -22,7 +22,7 @@ public class AnalyticsCounter {
 		Analyse analyse = new Analyse(new ReadSymptomDataFromFile(inPutFile), new CountAndOrderSymptoms(),
 				new GenerateOutput(outPutFile));
 		/**
-		 * lecture à partir de inPutFile 
+		 * lecture à partir de inPutFile
 		 */
 		List<String> listNotCounted = analyse.getSymptom();
 		/**

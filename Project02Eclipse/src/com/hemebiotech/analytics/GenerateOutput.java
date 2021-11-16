@@ -19,12 +19,15 @@ public class GenerateOutput implements ISymptomWriter {
 	 * Écrire le résultat dans un fichier après l'avoir compté et trié à partir de
 	 * la classe CountAndOrderSymptoms/ Write result to file after counting and
 	 * sorting it from the CountAndOrderSymptoms class
-	 * @writeSymptoms Écrire le résultat dans un fichier après l'avoir compté et trié à partir dela classe CountAndOrderSymptoms
-	 * @compteurs Nous le prenons pour prendre sa taille et l'utilisons pourécrire les symptômes 
+	 * 
+	 * @writeSymptoms Écrire le résultat dans un fichier après l'avoir compté et
+	 *                trié à partir dela classe CountAndOrderSymptoms
+	 * @compteurs Nous le prenons pour prendre sa taille et l'utilisons pourécrire
+	 *            les symptômes
 	 */
 	public void writeSymptoms(Map<String, Integer> compteurs) {
 		try (PrintWriter writer = new PrintWriter(new FileWriter(outPutFile));) {
-			
+
 			for (Map.Entry<String, Integer> k : compteurs.entrySet()) {
 				System.out.println(k.getKey() + " " + k.getValue());
 				writer.println(k.getKey() + " " + k.getValue());

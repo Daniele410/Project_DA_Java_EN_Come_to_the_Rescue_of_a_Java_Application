@@ -8,9 +8,8 @@ public class CountAndOrderSymptoms implements ISymptomCounter {
 
 	public Map<String, Integer> processData(List<String> listNotCounted) {
 		/**
-		 * Creation TreeMap 
-		 * Avoir instancié "TreeMap"  permet d'avoir un tri selon l'ordre qu'on veut, 
-		 * donc alphabétique par exemple
+		 * Creation TreeMap Avoir instancié "TreeMap" permet d'avoir un tri selon
+		 * l'ordre qu'on veut, donc alphabétique par exemple
 		 */
 		TreeMap<String, Integer> compteurs = new TreeMap<>();
 		for (String symptom : listNotCounted) {
